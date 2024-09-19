@@ -13,7 +13,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 public class ContaTeste {
 
     @Spy
-    private Conta conta = new Conta(1000);
+    private Conta conta = new Conta(3000);
 
     @Test
     void validarOrdemDeChamadas() {
@@ -35,5 +35,11 @@ public class ContaTeste {
         conta.validaSaldo(600);
 
         Mockito.verify(conta, Mockito.times(3)).validaSaldo(ArgumentMatchers.anyInt());
+    }
+
+    @Test
+    void retornaTrueParaQualquerValorNaValidacaoDeSaldo() {
+        Mockito.doNothing().when(conta).validaSaldo(ArgumentMatchers.anyInt());
+        conta.validaSaldo(3500);
     }
 }
