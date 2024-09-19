@@ -1,4 +1,4 @@
-package me.dio.mockito.exemplos;
+package me.dio.mockito.exemplos.cadastraPessoa;
 
 public class DadosLocalizacao {
     private String uf;

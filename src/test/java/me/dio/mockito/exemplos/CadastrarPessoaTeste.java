@@ -1,5 +1,9 @@
 package me.dio.mockito.exemplos;
 
+import me.dio.mockito.exemplos.cadastraPessoa.ApiDosCorreios;
+import me.dio.mockito.exemplos.cadastraPessoa.CadastrarPessoa;
+import me.dio.mockito.exemplos.cadastraPessoa.DadosLocalizacao;
+import me.dio.mockito.exemplos.cadastraPessoa.Pessoa;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

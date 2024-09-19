@@ -1,4 +1,4 @@
-package me.dio.mockito.exemplos;
+package me.dio.mockito.exemplos.cadastraPessoa;
 
 import java.time.LocalDate;
 
